@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node yogiserver.cjs",
+    "dev": "nodemon --ext cjs,js,json --watch . yogiserver.cjs"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,8 @@
     "mongodb": "^6.20.0",
     "mongoose-int32": "^0.6.0",
     "mongosh": "^2.5.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
