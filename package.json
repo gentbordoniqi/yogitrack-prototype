@@ -20,10 +20,7 @@
   "homepage": "https://github.com/gentbordoniqi/yogitrack-prototype#readme",
   "dependencies": {
     "express": "^5.1.0",
-    "heroku": "^8.7.1",
-    "mongodb": "^6.20.0",
-    "mongoose-int32": "^0.6.0",
-    "mongosh": "^2.5.8"
+    "mongoose": "^8.19.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
