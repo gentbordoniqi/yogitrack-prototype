@@ -46,7 +46,7 @@ exports.getInstructor = async (req, res) => {
 exports.add = async (req, res) => {
   try {
     const {
-      instructorId,
+      //instructorId,
       firstname,
       lastname,
       email,
@@ -104,7 +104,7 @@ exports.getInstructorIds = async (req, res) => {
     const instructors = await Instructor.find(
       {},
       { instructorId: 1, firstname: 1, lastname: 1, _id: 0 }
-    ).sort();
+    ).sort({instructorId: 1});
 
     res.json(instructors);
   } catch (e) {
